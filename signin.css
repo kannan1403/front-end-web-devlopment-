@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    background-color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+.logo{
+    margin-top: 20px;
+}
+.sigin-in-container{
+    max-width: 350px;
+    border: 1px solid #d2d2d2;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 26px;
+    border-radius: 8px;
+    text-align: left;
+}
+.sigin-title{
+    font-size:20px ;
+    font-weight: 400;
+}
+.input-lable{
+    margin-top: 20px;
+}
+.sigin-in-container input{
+    width: 100%;
+    height: 32px;
+    margin-top: 5px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    font-size: 12px;
+}
+.sigin-in-container input:focus{
+    outline: 3px solid #cfcf;
+}
+.sigin-in-container button{
+    width:100% ;
+    height: 32px;
+    margin: 15px 0;
+    background-color: #ffd814;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.sigin-in-container button:hover{
+    background-color: greenyellow;
+
+}
+.sigin-in-condition{
+    font-size: 16px;
+}
+.sigin-in-container p span{
+    color: #0066c0;
+    font-size: 20px;
+}
+.sigin-help{
+    font: 20px;
+    margin: 20px 0;
+}
+.sigin-in-container hr{
+    border: none;
+    height: 1px;
+    background-color: #d4d4d4;
+     
+}
+.sigin-in-container  h4{
+    margin: 15px 0;
+    font-size: 13px;
+}
+.sigin-business{
+    font-size: 12px;
+}
+/*🧠 Why the <hr> “disappears” or doesn’t look right:
+By setting display: flex on .sigin-bottom, all direct children (like <hr> and <p>) 
+become flex items arranged in a row by default — not stacked vertically.
+But <hr> is meant to stretch horizontally — and as a flex item inside a row layout, 
+it now behaves like an inline box, collapsing to its content size.*/
+
+
+/*max-width of continer is also 350pc*/
+.sigin-bottom{
+    max-width:350px ;
+    font-size: 13px;
+    color: #737373;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+/*to make the line visible*/
+.sigin-bottom hr{
+    border: none;
+    height: 1px;
+    background-color: #d4d4d4;
+    width: 100px;
+
+}
+.sigin-signup-btn{
+    width: 350px;
+    height: 30px;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+}
+/* background  is correct because background color is constant*/
+.sigin-signup-btn:hover{
+    background: #f1f1f1;
+}
+/*height: auto;
+Allows the height of the footer to automatically adjust based on its content.
+ This means it will grow or shrink depending on how much content is inside it.
+Note: Since the max-height is also set, it will not grow beyond 200px.
+
+position: fixed;
+Fixes the position of the footer to the bottom of the viewport (the visible area of the screen).
+This means the footer will stay at the bottom of the page even when the user scrolls down.
+
+bottom: 0;
+Positions the footer at the bottom of the page (or viewport).
+Combined with position: fixed, this ensures the footer is always visible at the bottom, 
+no matter how far the user scrolls down.
+
+background: linear-gradient(to bottom, yellow, #fff);
+This sets the background of the footer to a linear gradient that goes from yellow at the top to white (#fff) at the bottom.
+The gradient direction is defined as to bottom, meaning the gradient will start at the top and transition to white as it moves downward.
+*/
+footer{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin-top: 20px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to bottom,white,#f1f1f1);
+    border: 2px solid #ededed;
+    font-size: 12px;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.footer-links a{
+    text-decoration: none;
+
+}

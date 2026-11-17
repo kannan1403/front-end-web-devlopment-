@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <a href="/"><img class="logo" src="./assets/amazon_logo_dark.png" alt="" width="100px"></a>
+    <div class="sigin-in-container">
+        <h1 class="sigin-title">SIGIN-IN</h1>
+        <h5 class="input-lable">E-mail or Mobile Number</h5>
+        <input type="text">
+        <button>continue</button>
+        <p class="sigin-in-condition">by continuing ,you agree to amazon's 
+            <span>condition of use</span> and 
+            <span>privacy notice</span>
+        </p>
+        <p class="sigin-help">&#9656 <span>need help</span></p>
+        <hr>
+        <h4>buying for work?</h4>
+        <p class="sigin-business"><span>shop on amazon business</span></p>
+    </div>
+<!--🧠 Why the <hr> “disappears” or doesn’t look right:
+By setting display: flex on .sigin-bottom, all direct children (like <hr> and <p>) 
+become flex items arranged in a row by default — not stacked vertically.
+But <hr> is meant to stretch horizontally — and as a flex item inside a row layout, 
+it now behaves like an inline box, collapsing to its content size.-->
+    <div class="sigin-bottom">
+        <hr>
+        <p>new to amazon?</p>
+        <hr>
+    </div>
+    <a href="signup.html">
+        <button class="sigin-signup-btn">create your amazon auccont</button>
+    </a>
+    <footer>
+        <div class="footer-links">
+            <a href="#">condition of use</a>   |
+            <a href="#">privacy notice</a>   |
+            <a href="#">help</a>
+        </div>
+        <p class="footer-copyrigth">@ 1996-2024 ,amazon.com ,inc. or its affiliates</p>
+    </footer>
+</body>
+</html>
+
+
